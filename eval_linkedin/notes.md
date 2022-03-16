@@ -16,7 +16,7 @@
 - How to use range to instanciate [10,9,8,7,6,5,4,3,2,1] 
 - How to get all of the key of a dictionnary
 - it is mainly about the datatype and how to use it in fact
-- What append if there is no retrun in a function
+- What append if there is no return in a function
 - What append if there is not a condition in a while loop
 - Methods to read external files
 
