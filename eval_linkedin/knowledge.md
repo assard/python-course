@@ -126,6 +126,92 @@ def http_error(status):
 
     Return True if any element of the iterable is true.
 
+- bin(x)
+
+    Convert an integer number to a binary string prefixed by "0b".
+
+- chr(i)
+
+    Return the string representing a character whose Unicode code point is the integer i. For example, chr(97) returns the string 'a', while chr(8364) returns the string '€'.
+
+- filter(function, iterable)
+
+Construct an iterator from those elements of iterable for which function returns true.
+
+Example
+
+```
+# function that filters vowels
+def fun(variable):
+	letters = ['a', 'e', 'i', 'o', 'u']
+	if (variable in letters):
+		return True
+	else:
+		return False
+
+
+# sequence
+sequence = ['g', 'e', 'e', 'j', 'k', 's', 'p', 'r']
+
+# using filter function
+filtered = filter(fun, sequence)
+
+print('The filtered letters are:')
+for s in filtered:
+	print(s)
+
+Output : 
+The filtered letters are:
+e
+e
+```
+
+- getattr(object, name)
+
+Return the value of the named attribute of object. For example, getattr(x, 'foobar') is equivalent to x.foobar.
+
+- map(function,iterable)
+
+Return an iterator that applies function to every item of iterable.
+
+- The different mode for the open() method : 
+    - 'r' : open for reading (default)
+    - 'w' : open for writing, truncating the file first
+    - 'x' : open for exclusive creation, failing if the file already exists
+    - 'a' : open for writing, appending to the end of the file if it exists
+    - 'b' : binary mode 
+    - 't' : text mode   
+    - '+' : open for updating (reading and writing)
+
+- The method open() return a file object
+
+- The @property decorator turn a method into a "getter" for a read-only attribute with the same name
+
+Example :
+
+```
+class C:
+    def __init__(self):
+        self._x = None
+
+    @property
+    def x(self):
+        """I'm the 'x' property."""
+        return self._x
+
+    @x.setter
+    def x(self, value):
+        self._x = value
+
+    @x.deleter
+    def x(self):
+        del self._x
+```
+
+
+
+
+
 - TODO: continue to explore built-in methods that I don't know
 
 
